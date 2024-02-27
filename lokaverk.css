@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+}
+
+.logo{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+    background-color: black;
+}
+
+.innerlinks{
+    background-color: black;
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+.bg-grunnur{
+    background-color: gray;
+}
+
+body{
+    background-color: black;
+    margin: 0px;
+    font-family: 'PT Sans';
+}
+
+.art1{
+    grid-area: art1;
+    padding: 20px;
+}
+
+.art2{
+    grid-area: art2;
+    padding: 20px;
+}
+
+.art3{
+    grid-area: art3;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "art1"
+    "art2"
+    "art3";
+}
+
+
+.album{
+    gap: 1em;
+    row-gap: 1em;
+}
+
+
+footer {
+    text-align: center;
+
+}
+
+.column {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    vertical-align: top;
+}
+  
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h4{
+    color: white;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+  
+ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.kort{
+    filter: grayscale();
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 960px){
+    .grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "art1 art2"
+        "art3 art3";
+    }
+
+    .column{
+    width: 30%;
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "art1 art2"
+        "art3 art3";
+    }
+
+    .column{
+        width: 30%;
+        margin: 0 10px; 
+        display: inline-block;
+        vertical-align: top;
+    }
+}
